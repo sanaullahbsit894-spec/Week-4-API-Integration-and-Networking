@@ -23,3 +23,19 @@ flutter run
 ```
 
 ## Architecture
+
+lib/
+├── models/ # Data classes with fromJson factories
+├── services/ # API calls isolated in ApiService
+├── screens/ # UI screens
+├── widgets/ # Reusable components
+└── theme/ # Colors and ThemeData
+
+## API Endpoints Used
+
+| Endpoint                | Purpose             |
+| ----------------------- | ------------------- |
+| `GET /users`            | All users list      |
+| `GET /users/:id`        | Single user profile |
+| `GET /posts`            | All posts           |
+| `GET /posts?userId=:id` | Posts by user       |
